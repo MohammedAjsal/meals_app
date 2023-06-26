@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
-  MainDrawer({required this.onSelectScreen, super.key});
+  const MainDrawer({required this.onSelectScreen, super.key});
   final void Function(String identifier) onSelectScreen;
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class MainDrawer extends StatelessWidget {
       child: Column(
         children: [
           DrawerHeader(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               gradient: LinearGradient(colors: [
                 Theme.of(context).colorScheme.primaryContainer,
