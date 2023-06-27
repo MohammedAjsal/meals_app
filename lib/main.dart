@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 // import 'package:meals_app/data/dummy_data.dart';
 // import 'package:meals_app/screens/categories.dart';
@@ -16,7 +17,7 @@ final theme = ThemeData(
 
 void main() {
   runApp(
-    const App(),
+    const ProviderScope(child: App()),
   );
 }
 
