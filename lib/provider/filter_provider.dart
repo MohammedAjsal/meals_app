@@ -17,9 +17,9 @@ class FilterMealProvider extends StateNotifier<Map<Filter, bool>> {
           Filter.vegan: false,
         });
 
-  void setFilters(Map<Filter, bool> choosenFilter) {
-    state = choosenFilter;
-  }
+  // void setFilters(Map<Filter, bool> choosenFilter) {
+  //   state = choosenFilter;
+  // }
 
   void setFilter(Filter filter, bool isActive) {
     state = {...state, filter: isActive};

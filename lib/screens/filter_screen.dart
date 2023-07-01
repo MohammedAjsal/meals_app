@@ -55,6 +55,7 @@ class FiltersScreen extends ConsumerWidget {
           Column(
         children: [
           SwitchListTile(
+            // value: _glutenFreeFilterSet,
             value: activeFilters[Filter.glutenfree]!,
             onChanged: (isChecked) {
               ref
